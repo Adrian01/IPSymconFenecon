@@ -1,0 +1,24 @@
+{
+    "elements":
+    [
+
+        { "type": "Label", "caption": "Fenecon Home" },
+        { "type": "CheckBox", "name": "activModule", "caption": "Schnittstelle aktivieren" },
+        { "type": "ValidationTextBox", "name": "ip", "caption": "FEMS IP-Adresse" },
+        { "type": "ValidationTextBox", "name": "username", "caption": "Benutzername" },
+        { "type": "ValidationTextBox", "name": "password", "caption": "Passwort" },
+        { "type": "Label", "caption": "Aktualisierungsintervall Fenecon Home" },
+        { "type": "NumberSpinner", "name": "UpdateIntervall", "caption": "Intervall", "suffix": "Sekunden" },
+        { "type": "CheckBox", "name": "counter_kWh", "caption": "Zählervariabeln in kWh aktivieren" }
+
+    ],
+
+    "status":
+
+    [
+        { "code": 102, "icon": "active", "caption": "Instanz aktiv und Verbindung hergestellt!" },
+        { "code": 104, "icon": "inactive", "caption": "Instanz deaktiviert" },
+        { "code": 200, "icon": "error", "caption": "Instanz Konfigurations fehlerhaft!" }
+    ]
+
+}
