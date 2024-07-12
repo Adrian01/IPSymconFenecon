@@ -97,7 +97,7 @@ FHO_update()
 
 |           Modul            |  Typ   |                  GUID                  |
 |:--------------------------:|:------:|:--------------------------------------:|
-|          Fenecon           | Device | {C4D7A2A4-789F-63CE-D5CC-DD0BD1671C0C} |
+|          Fenecon           | Device | {55E5BB9E-CCC5-4777-5092-4CDF80AE4EA5} |
 
 
 
