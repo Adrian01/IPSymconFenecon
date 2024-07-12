@@ -59,7 +59,7 @@ Wenn eine Ladestation über das FEMS-System angebunden wurde, können die Status
 
  _**Datenpunkte aktualisieren**_
 ```php
-FH_update()
+FHO_update()
 ```
 
 ## 6. Statusvariablen
