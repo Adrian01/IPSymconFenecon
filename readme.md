@@ -64,17 +64,31 @@ FH_update()
 
 ## 6. Statusvariablen
 
-|         Variable           |   Typ   |                                  Beschreibung                                           |
-|:--------------------------:|:-------:|:---------------------------------------------------------------------------------------:|
-|      Systemzustand         | Integer | gibt den aktuellen Zustand des Gesamtsystems aus                                        |
-|      Netzmodus             | Integer | gibt an ob sich das System im Netzbetrieb oder Notstrombetrieb befindet                 |
-|      Gesamtverbrauch       | Integer | Zählervariable des Gesamtstromverbrauchs in kWh                                         |
-|      Momentanverbrauch     | Integer | Aktueller Stromverbrauch (mögliche PV-Produktion nicht berücksichtig)                   |
-|      Momentanverbrauch L1  | Integer | Aktueller Stromverbrauch auf der Phase L1 (mögliche PV-Produktion nicht berücksichtig)  |
-|      Momentanverbrauch L2  | Integer | Aktueller Stromverbrauch auf der Phase L2 (mögliche PV-Produktion nicht berücksichtig)  |
-|      Momentanverbrauch L3  | Integer | Aktueller Stromverbrauch auf der Phase L3 (mögliche PV-Produktion nicht berücksichtig)  |
-|      Gesamtbezug Netz      | Integer | Zählervariable des gesamten Stroms der über das Netz bezogen/zugekauft wurde            |
-
+|         Variable                 |   Typ   |                                  Beschreibung                                           |
+|:--------------------------------:|:-------:|:---------------------------------------------------------------------------------------:|
+|      Systemzustand               | Integer | gibt den aktuellen Zustand des Gesamtsystems aus                                        |
+|      Netzmodus                   | Integer | gibt an ob sich das System im Netzbetrieb oder Notstrombetrieb befindet                 |
+|      Gesamtverbrauch             | Integer | Zählervariable des Gesamtstromverbrauchs in kWh                                         |
+|      Momentanverbrauch           | Integer | Aktueller Stromverbrauch (mögliche PV-Produktion nicht berücksichtig)                   |
+|      Momentanverbrauch L1        | Integer | Aktueller Stromverbrauch auf der Phase L1 (mögliche PV-Produktion nicht berücksichtig)  |
+|      Momentanverbrauch L2        | Integer | Aktueller Stromverbrauch auf der Phase L2 (mögliche PV-Produktion nicht berücksichtig)  |
+|      Momentanverbrauch L3        | Integer | Aktueller Stromverbrauch auf der Phase L3 (mögliche PV-Produktion nicht berücksichtig)                 |
+|      Gesamtbezug Netz            | Integer | Zählervariable des gesamten Stroms der über das Netz bezogen/zugekauft wurde                           |
+|      Gesamteinspeisung Netz      | Integer | Zählervariable des gesamten Stroms der in das Netz eingespeist wurde (Überschusseinspeisung)           |
+|      Momentanleistung Netz       | Integer | Aktueller Bezug oder Einspeisung am Netzanschlusspunkt, positiv = Bezug / negativ = Einspeisung        |
+|      Momentanleistung Netz L1    | Integer | Aktueller Bezug oder Einspeisung am Netzanschlusspunkt auf der Phase L1, positiv = Bezug / negativ = Einspeisung        |
+|      Momentanleistung Netz L2    | Integer | Aktueller Bezug oder Einspeisung am Netzanschlusspunkt auf der Phase L2, positiv = Bezug / negativ = Einspeisung        |
+|      Momentanleistung Netz L3    | Integer | Aktueller Bezug oder Einspeisung am Netzanschlusspunkt auf der Phase L3, positiv = Bezug / negativ = Einspeisung        |
+|      PV-Produktion aktuell       | Integer | Produktion der PV-Anlage                                                                                                |
+|      PV-Produktion gesamt        | Integer | Gesamte Produktion der PV-Anlage seit Inbetriebnahme                                                                    |
+|      Momentanleistung Speicher   | Integer | Aktuelle Be-/Entladung des Stromspeichers, positiv = Entladung / negativ = Beladung                                     |
+|      Beladung Speicher gesamt    | Integer | Zählervariable der gesamten Energie die seit Inbetriebnahme in den Speicher geladen wurde                               |
+|      Entladung Speicher gesamt   | Integer | Zählervariable der gesamten Energie die seit Inbetriebnahme aus dem Speicher entladen wurde                             |
+|      Kapazität Speichersystem    | Float   | Nennkapazität des Speichersystems                                                                                       |
+|      Zustand Ladestation         | Integer | gibt den aktuellen Betriebszustand der Ladestation aus                                                                  |
+|      Ladeleistung                | Integer | aktuell eingestellte Ladeleistung der Ladestation                                                                       |
+|      Energie Ladevorgang         | Integer | Zählervariable Verbrauch während des aktullen bzw. des vergangenen Ladevorgangs (wird bei neuem Vorgang zurückgesetzt   |
+|      Gesamtverbrauch Ladestation | Integer | Zählervariable Gesamtverbrauch für alle Ladevorgänge seit Inbetriebnahme der Ladestation am FEMS-System                 |
 
 
 ## 7. Anhang
